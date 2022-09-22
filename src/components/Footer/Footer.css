@@ -1,0 +1,259 @@
+
+footer {
+    margin-top: 10px;
+    background: url('../../../public/img/footer-bg.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative
+}
+
+footer:after {
+    content: "";
+    background-color: rgba(33, 33, 33, .7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+.footer-top {
+    position: relative;
+    z-index: 1;
+    padding-top: 84px;
+    padding-left: 43px
+}
+
+.footer-logo {
+    display: flex;
+    align-items: flex-end
+}
+
+.footer-logo span {
+    line-height: normal;
+    color: #fff;
+    font-size: 64px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 500;
+    margin-left: 32px
+}
+
+.footer-desc {
+    color: #fff;
+    font-size: 17px;
+    max-width: 50%;
+    margin-bottom: 0;
+    padding-top: 44px
+}
+
+.footer-middle {
+    position: relative;
+    z-index: 1;
+    padding-left: 43px;
+    padding-right: 120px;
+    display: flex;
+    justify-content: space-between
+}
+
+.footer-contact {
+    padding-top: 44px
+}
+
+.footer-contact-item {
+    margin-top: 15px;
+    display: flex;
+    align-items: center
+}
+
+.footer-contact-icon {
+    margin-right: 30px
+}
+
+.footer-contact-text {
+    font-size: 21px;
+    margin-top: 5px;
+    font-weight: 500;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #fff;
+    transition: all .3s ease-out
+}
+
+.footer-contact-text:hover {
+    color: #ffc045
+}
+
+.footer-contact-text:focus {
+    color: #fff
+}
+
+.footer-bottom {
+    position: relative;
+    z-index: 1;
+    padding-top: 150px;
+    padding-right: 30px;
+    padding-left: 43px;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between
+}
+
+.footer-copyright {
+    margin-bottom: 0;
+    color: #fff;
+    padding-bottom: 30px
+}
+
+.footer-social {
+   
+    display: flex;
+    padding-bottom: 30px
+}
+
+.footer-social a {
+    text-decoration: none;
+    width: 29px;
+    min-width: 29px;
+    height: 29px;
+    margin-left: 12px;
+    background-color: #fff;
+    color: #212121;
+    border-radius: 50%;
+    transition: all .3s ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.footer-social a:hover {
+    color: #fff
+}
+
+.footer-social a:focus {
+    color: #212121
+}
+
+
+@media only screen and (max-width:992px) {
+    
+    .footer-top {
+        padding-top: 60px;
+        padding-left: 40px
+    }
+
+    .footer-middle {
+        flex-direction: column;
+        padding-left: 40px;
+        padding-right: 80px
+    }
+
+    .footer-end__container {
+        align-items: flex-start
+    }
+
+    .footer-end__right {
+        flex-direction: column;
+        align-items: flex-end
+    }
+
+    .footer-end__navigation {
+        margin-bottom: 18px
+    }
+
+    .footer-end__navigation li:last-child {
+        margin-right: 0
+    }
+
+    .footer-desc {
+        max-width: 100%;
+        -webkit-box-ordinal-group: 3;
+        -webkit-order: 2;
+        -ms-flex-order: 2;
+        order: 2
+    }
+
+    .footer-logo img {
+        width: 60px
+    }
+
+    .footer-logo span {
+        font-size: 48px
+    }
+
+    .footer-contact {
+        padding-top: 30px
+    }
+
+    .footer-bottom {
+        padding-top: 80px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .footer-end__container {
+        flex-direction: column;
+        align-items: flex-start
+    }
+
+    .footer-end__left {
+        display: flex !important;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 15px
+    }
+
+    .footer-end__right {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%
+    }
+
+    .footer-end__navigation {
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 18px
+    }
+
+    .footer-end__navigation li:last-child {
+        margin-right: 0
+    }
+
+    .footer-copyright {
+        -webkit-box-ordinal-group: 3;
+        -webkit-order: 2;
+        -ms-flex-order: 2;
+        order: 2
+    }
+
+    .footer-social {
+
+
+
+        display: flex;
+
+
+
+        align-items: center
+    }
+
+    .footer-social a {
+        margin-left: 0;
+        margin-right: 12px
+    }
+
+    .footer-text {
+        width: 100%
+    }
+
+    .footer-bottom {
+
+        
+
+
+        flex-direction: column;
+        align-items: flex-start
+    }
+
+}
+

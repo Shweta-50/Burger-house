@@ -1,0 +1,209 @@
+
+.nav-item {
+    margin: 0
+}
+
+
+
+.navbar {
+    position: relative;
+    z-index: 2;
+    height: 136px;
+    padding: 33px 50px 0 60px;
+    transition: background-image .2s ease, padding .3s linear, -webkit-box-shadow .2s ease;
+    transition: background-image .2s ease, box-shadow .2s ease, padding .3s linear;
+    transition: background-image .2s ease, box-shadow .2s ease, padding .3s linear, -webkit-box-shadow .2s ease
+}
+
+.navbar .call-delivery {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end
+}
+
+.navbar .call-delivery-icon {
+    margin-right: 15px;
+    -webkit-animation: shake .9s cubic-bezier(.36, .07, .19, .97) infinite;
+    animation: shake .9s cubic-bezier(.36, .07, .19, .97) infinite;
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 5000px;
+    perspective: 5000px
+}
+
+.navbar .call-delivery-number {
+    font-size: 17px;
+    font-weight: 700;
+    font-family: Montserrat, sans-serif
+}
+
+.navbar .call-delivery-number a {
+    color: #3d2514;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.navbar.affix {
+    position: fixed !important;
+    padding-top: 0;
+    background-image: url(../../../public/img/banner/bg.png);
+    -webkit-box-shadow: 1px 0 10px rgba(0, 0, 0, .1);
+    box-shadow: 1px 0 10px rgba(0, 0, 0, .1)
+}
+
+.navbar.affix-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%
+}
+
+.navbar-brand {
+    padding: 0;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 36px;
+    font-weight: 700
+}
+
+.navbar-brand img {
+    margin-right: 10px
+}
+
+
+
+.navbar-collapse.collapse {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end
+}
+
+.navbar-right {
+    text-align: right
+}
+
+.navbar-nav {
+    -webkit-box-orient: horizontal;
+    
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row
+}
+
+.navbar-nav>li>a {
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-left: 50px;
+    position: relative;
+    text-shadow: none;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #3d2514;
+    text-decoration: none;
+}
+
+.navbar-nav>li>a:focus,
+.navbar-nav>li>a:hover {
+    background-color: transparent;
+    color: #3d2514
+}
+
+.navbar-nav>li.active>a {
+    color: #ffd630
+}
+
+#navbar_content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%
+}
+
+
+@media only screen and (max-width:992px) {
+    
+    .navbar-nav {
+        display: none;
+    }
+    .mobile-nav{
+        display: none;
+    }
+
+    .navbar .call-delivery {
+        margin-bottom: 0;
+    }
+
+    .navbar-collapse {
+        margin-right: 20px;
+    }
+
+    
+}
+
+@media only screen and (max-width:768px) {
+    .navbar {
+        height: 105px;
+        padding: 0 20px
+    }
+
+    .navbar-collapse.collapse {
+        display: none
+    }
+
+    .navbar-header {
+        width: 100%;
+        position: relative
+    }
+   .mobile-nav{
+    display:flex;
+    flex-direction: column;
+    position:absolute;
+    top:100px;
+    background-image: url(../../../public/img/banner/bg.png);
+    width:100%;
+    padding-left:0!important;
+    padding-top:20px;
+    height:380px;
+    left:0;
+    z-index: 99;
+   }
+   .mobile-nav ul{
+    padding-bottom: 100px;
+   }
+   .mobile-nav ul li{
+    list-style: none;
+    padding:12px 30px;
+    margin-top: 20px;
+   }
+   .mobile-nav ul li a{
+    text-decoration: none!important;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color:#3d2514;
+   }
+
+   .mobile-nav ul li:hover{
+    background:orangered;
+    border-radius:50px 0px 0px 50px;
+   }
+}
+
+@media only screen and (min-width:768px){
+    .mobile-nav{
+        display: none;
+    }
+    .show{
+        display:flex;
+    }
+    .burger-menu-icon{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:480px){
+    .burger-menu-icon span{
+       margin-left:20px!important;    }
+}
